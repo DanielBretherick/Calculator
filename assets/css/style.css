@@ -1,0 +1,53 @@
+:root{
+    --primary-color: #373737
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    background: var(--primary-color);
+}
+
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    background: #f4f4f4;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+
+}
+
+.calculadora{
+    width: 400px;
+    margin: auto;
+}
+
+.display{
+    font-size:2em;
+    width: 100%;
+    text-align: right;
+}
+
+.btn{
+    width:100%;
+    height: 40px;
+    font-size: 1em;
+    border: none;
+    background: #ECD06F;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background:#dcd0c0;
+}
+
+
+
