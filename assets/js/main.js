@@ -32,6 +32,7 @@ function criaCalculadora(){
 
     btnParaDisplay(valor){
       this.display.value += valor;
+      this.display.focus();
     },
 
     apagaUm(){
@@ -46,7 +47,7 @@ function criaCalculadora(){
           alert('Conta invalida');
           return;
         }
-
+        
         this.display.value = String(conta);
       } catch(e){
         alert('Conta Inválida');
@@ -59,10 +60,10 @@ function criaCalculadora(){
     },
 
     pressionaEnter(){
-      this.display.addEventListener('keyup', e =>{
-        if(e.keyCode===13){
-          this.realizaConta();
-        }
+      document.addEventListener('keypress', e =>{
+        if(e.key !== 'Enter'){return;}
+        this.realizaConta();  
+          
       });
     }
 
